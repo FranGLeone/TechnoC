@@ -1,18 +1,20 @@
 import 'materialize-css/dist/css/materialize.min.css';
+import CartWidget from './CartWidget';
 
 const NavBar = () =>{
     return(
         <header>
           <div className="navbar-fixed">
           <nav>  
-            <div className="nav-wrapper">
-              <a href="#!" className="brand-logo center">TechnoCraft</a>
+            <div className="nav-wrapper  teal lighten-2">
+              <a href="#!" className="brand-logo center"><h4>TechnoCraft</h4></a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul className="left hide-on-med-and-down">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Contacto</a></li>
                 <li className="active"><a href="">Tienda</a></li>
               </ul>
+              <CartWidget/>
             </div>   
           </nav>
           <ul class="sidenav" id="mobile-demo">
