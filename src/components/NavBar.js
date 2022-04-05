@@ -1,30 +1,37 @@
-import 'materialize-css/dist/css/materialize.min.css';
-import CartWidget from './CartWidget';
+import {Navbar, Nav, Container} from "react-bootstrap";
+import logo from "../assets/images/logo.png"
+import CartWidget from "./CartWidget"
+
 
 const NavBar = () =>{
     return(
-        <header>
-          <div className="navbar-fixed">
-          <nav>  
-            <div className="nav-wrapper  teal lighten-2">
-              <a href="#!" className="brand-logo center"><h4>TechnoCraft</h4></a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul className="left hide-on-med-and-down">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Contacto</a></li>
-                <li className="active"><a href="">Tienda</a></li>
-              </ul>
-              <CartWidget/>
-            </div>   
-          </nav>
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-          </div>
-        </header>
+      <Navbar className="NavbarColor" variant="dark">
+        <Container>
+        <Navbar.Brand href="#home">
+          <img
+            alt=""
+            src={logo}
+            width="50"
+            height="50"
+            className="d-inline-block"
+          />{' '}
+        <span className="NavbarTitulo">TechnoCraft</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Inicio</Nav.Link>
+          <Nav.Link href="#link">Componentes</Nav.Link> 
+          <Nav.Link href="#link">Arma tu PC</Nav.Link>        
+        </Nav>                   
+        <Nav className="mx-4">
+          <Nav.Link href="#link">Crear cuenta</Nav.Link>
+          <Nav.Link href="#link">Iniciar sesión</Nav.Link>                        
+        </Nav>                    
+          <CartWidget />
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     )
     
 };

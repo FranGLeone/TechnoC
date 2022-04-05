@@ -1,0 +1,31 @@
+.NavbarColor{
+    background-color: rgb(10, 17, 31);
+}
+
+.NavbarTitulo{
+    font-size: 20px;
+}
+
+.contador{
+    display: flex;
+    justify-content:space-around;
+}
+
+.DivProductos{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imgCard{
+    padding: 20px;
+}
+
+
+.imgCard:hover{
+    padding: 5px;
+    transition: all 0.5s ease-out
+}
+
+

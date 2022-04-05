@@ -4,7 +4,7 @@ const CartWidget =() =>{
     return(
     <ul className="right hide-on-med-and-down">
         <li><a href="sass.html"><i className="large material-icons">shopping_cart</i></a></li>
-        <li className="flow-text">5</li>
+        <span className="h6">5</span>
     </ul>
     )
 }

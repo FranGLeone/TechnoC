@@ -1,0 +1,15 @@
+let is_ok = true;
+
+const customPromise = (time, task) => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            if (is_ok) {
+                res(task);
+            } else {
+                rej("Error");
+            }
+        }, time);
+    });
+}
+
+export default customPromise;

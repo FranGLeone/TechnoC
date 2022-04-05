@@ -1,15 +1,9 @@
-import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import Store from "./pages/Store";
 
-function App() {
-  return (
-    <>
-    <NavBar/>
-    <ItemListContainer
-    greeting="Hola mundo"/>
-    </>
-  );
+const App =()=>{
+  return(
+    <Store/>
+  )
 }
 
 export default App;
