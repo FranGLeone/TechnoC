@@ -3,8 +3,8 @@ import {Card} from "react-bootstrap"
 
 const Item =({id,name,stock,price,thumbnail}) =>{
     return(
-        <Card className="DivProductos" key={id} style={{ width: '18rem' }}>
-            <Card.Img className="imgCard" variant="top" src={thumbnail} />
+        <Card className="DivProductos" href={id} style={{ width: '18rem' }}>
+            <Card.Img className="imgCard" variant="top" src={thumbnail}  />
             <Card.Body>
                 <div className="CardProductos"><Card.Title>{name}</Card.Title>
                 <hr></hr>

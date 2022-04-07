@@ -9,7 +9,7 @@ const NavBar = () =>{
       
     <Navbar className="NavbarColor" variant="dark">
     <Container>
-      <Navbar.Brand href="#">
+      <Navbar.Brand href="/">
       <img
             alt=""
             src={logo}
@@ -26,11 +26,12 @@ const NavBar = () =>{
           <Nav.Link href="#action1">Inicio</Nav.Link>
           <Nav.Link href="#action2">Arma tu PC</Nav.Link>
           <NavDropdown title="Productos" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="">Mothers</NavDropdown.Item>
-            <NavDropdown.Item href="">Memorias ram</NavDropdown.Item>
-            <NavDropdown.Item href="">Placas de video</NavDropdown.Item>
-            <NavDropdown.Item href="">Procesadores</NavDropdown.Item>
-            <NavDropdown.Item href="">Gabinetes</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Mother">Mothers</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Memoria RAM">Memorias RAM</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Almacenamiento">Procesadores</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Placa de video">Placas de video</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Procesador">Procesadores</NavDropdown.Item>
+            <NavDropdown.Item href="/category/Gabinete">Gabinetes</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav className="mx-4">
