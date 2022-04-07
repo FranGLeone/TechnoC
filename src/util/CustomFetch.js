@@ -1,6 +1,6 @@
 let is_ok = true;
 
-const customPromise = (time, task) => {
+const customFetch = (time, task) => {
     return new Promise((res, rej) => {
         setTimeout(() => {
             if (is_ok) {
@@ -12,4 +12,4 @@ const customPromise = (time, task) => {
     });
 }
 
-export default customPromise;
+export default customFetch;

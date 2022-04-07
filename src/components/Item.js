@@ -1,9 +1,9 @@
 import {Card} from "react-bootstrap"
-import ItemCount from "./ItemCount";
+
 
 const Item =({id,name,stock,price,thumbnail}) =>{
     return(
-        <Card className="CardProductos" key={id} style={{ width: '18rem' }}>
+        <Card className="DivProductos" key={id} style={{ width: '18rem' }}>
             <Card.Img className="imgCard" variant="top" src={thumbnail} />
             <Card.Body>
                 <div className="CardProductos"><Card.Title>{name}</Card.Title>
@@ -13,7 +13,7 @@ const Item =({id,name,stock,price,thumbnail}) =>{
                 <br></br>
                 <Card.Text>
                     <br></br>
-                    <ItemCount/>
+                    
                     <br></br>
                 </Card.Text>
                  

@@ -21,14 +21,13 @@ const ItemCount=()=>{
     return(
         <>
         <div className="contador">
-        <button onClick={decrement} className="waves-effect waves-light btn">-</button>
+        <button onClick={decrement} className="waves-effect waves-light btn red">-</button>
         {item}
-        <button onClick={increment} className="waves-effect waves-light btn">+</button>
+        <button onClick={increment} className="waves-effect waves-light btn green">+</button>
+        <br></br>
+        <span className=""><button className="waves-effect waves-light btn blue">Agregar al carrito</button>    </span> 
         </div>
-        <br></br>
-        <br></br>
-        
-        <div className="center"><button className="waves-effect waves-light btn" onClick={()=>alert("hola")}>Agregar al carrito</button>    </div> 
+       
         </>
     )
 }

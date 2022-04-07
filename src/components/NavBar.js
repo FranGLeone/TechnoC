@@ -1,14 +1,16 @@
-import {Navbar, Nav, Container} from "react-bootstrap";
+import {Navbar, Nav, Container, NavDropdown,} from "react-bootstrap";
 import logo from "../assets/images/logo.png"
 import CartWidget from "./CartWidget"
 
 
 const NavBar = () =>{
     return(
-      <Navbar className="NavbarColor" variant="dark">
-        <Container>
-        <Navbar.Brand href="#home">
-          <img
+      <>
+      
+    <Navbar className="NavbarColor" variant="dark">
+    <Container>
+      <Navbar.Brand href="#">
+      <img
             alt=""
             src={logo}
             width="50"
@@ -16,22 +18,30 @@ const NavBar = () =>{
             className="d-inline-block"
           />{' '}
         <span className="NavbarTitulo">TechnoCraft</span>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Inicio</Nav.Link>
-          <Nav.Link href="#link">Componentes</Nav.Link> 
-          <Nav.Link href="#link">Arma tu PC</Nav.Link>        
-        </Nav>                   
+      
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarScroll" />
+      <Navbar.Collapse id="navbarScroll">
+        <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+          <Nav.Link href="#action1">Inicio</Nav.Link>
+          <Nav.Link href="#action2">Arma tu PC</Nav.Link>
+          <NavDropdown title="Productos" id="navbarScrollingDropdown">
+            <NavDropdown.Item href="">Mothers</NavDropdown.Item>
+            <NavDropdown.Item href="">Memorias ram</NavDropdown.Item>
+            <NavDropdown.Item href="">Placas de video</NavDropdown.Item>
+            <NavDropdown.Item href="">Procesadores</NavDropdown.Item>
+            <NavDropdown.Item href="">Gabinetes</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
         <Nav className="mx-4">
           <Nav.Link href="#link">Crear cuenta</Nav.Link>
           <Nav.Link href="#link">Iniciar sesión</Nav.Link>                        
         </Nav>                    
           <CartWidget />
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  </>
     )
     
 };

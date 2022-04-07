@@ -1,14 +1,18 @@
 .NavbarColor{
-    background-color: rgb(10, 17, 31);
+    background-color: rgb(17, 29, 54);
 }
 
 .NavbarTitulo{
     font-size: 20px;
 }
 
+
 .contador{
     display: flex;
     justify-content:space-around;
+    height: 40px;
+    width: 400px;
+    
 }
 
 .DivProductos{
@@ -28,4 +32,59 @@
     transition: all 0.5s ease-out
 }
 
+.DivDetalles{
+   height: 700px;
+   display: flex;
+   align-items: center;
+   padding: 0px;
+   
+}
 
+
+
+.ImgDetalles{
+    padding-right: 300px;
+}
+
+.Name{
+    font-size: 30px;
+    font-weight: 400;
+
+    text-align: left;
+    
+}
+
+.Price{
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.Desc{
+    padding-top: 90px;
+}
+
+
+.Stock{
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.Footer{
+    background-color: rgb(20, 36, 70) ;
+    height: 173px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+
+.Footer2{
+    font-weight: 400;
+    font-size: 15px;
+    font-style: oblique;
+}
