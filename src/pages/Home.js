@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
-const Store=()=>{
+const Home=()=>{
     return(
         <>
         <BrowserRouter>
@@ -25,4 +25,4 @@ const Store=()=>{
     )
 }
 
-export default Store;
+export default Home;

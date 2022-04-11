@@ -7,10 +7,8 @@ const ItemDetail =({item}) =>{
 
     return(
         <>
-        {
-            item
-            ?
-            <>
+       
+          
             
             <Container className="DivDetalles">
                 <Row>
@@ -25,17 +23,13 @@ const ItemDetail =({item}) =>{
                             <p className="Name">Caracteristicas Generales.</p>
                             <hr></hr>
                             <h6>{item.description}</h6>
-                        </div>
-
-                    
-                        
+                        </div>    
                     </div>
                     
                 </Row>
             </Container>
-            </>
-            : <p>Cargando...</p>
-        }
+           
+         
         </>
     )
     

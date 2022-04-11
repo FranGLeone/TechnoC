@@ -1,8 +1,8 @@
-import Store from "./pages/Store";
+import Home from "./pages/Home"
 
 const App =()=>{
   return(
-    <Store/>
+    <Home/>
   )
 }
 

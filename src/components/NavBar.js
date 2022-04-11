@@ -7,7 +7,7 @@ const NavBar = () =>{
     return(
       <>
       
-    <Navbar className="NavbarColor" variant="dark">
+    <Navbar fixed="top" className="NavbarColor" variant="dark">
     <Container>
       <Navbar.Brand href="/">
       <img
@@ -23,9 +23,10 @@ const NavBar = () =>{
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-          <Nav.Link href="#action1">Inicio</Nav.Link>
           <Nav.Link href="#action2">Arma tu PC</Nav.Link>
           <NavDropdown title="Productos" id="navbarScrollingDropdown">
+            <NavDropdown.Item href="/">Todos</NavDropdown.Item>
+            <NavDropdown.Divider />
             <NavDropdown.Item href="/category/Mother">Mothers</NavDropdown.Item>
             <NavDropdown.Item href="/category/Memoria RAM">Memorias RAM</NavDropdown.Item>
             <NavDropdown.Item href="/category/Almacenamiento">Procesadores</NavDropdown.Item>
