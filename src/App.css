@@ -6,6 +6,22 @@
     font-size: 20px;
 }
 
+.Footer{
+    background-color: rgb(20, 36, 70) ;
+    height: 173px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+
+.Footer2{
+    font-weight: 400;
+    font-size: 15px;
+    font-style: oblique;
+}
+
 
 .contador{
     display: flex;
@@ -73,18 +89,9 @@
     padding-left: 10px;
 }
 
-.Footer{
-    background-color: rgb(20, 36, 70) ;
-    height: 173px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.boton{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: blue;
     color: white;
-    
-}
-
-.Footer2{
-    font-weight: 400;
-    font-size: 15px;
-    font-style: oblique;
 }

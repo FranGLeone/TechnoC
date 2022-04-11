@@ -1,5 +1,5 @@
 import ItemCount from "./ItemCount";
-import {Container,Row,Col} from "react-bootstrap"
+import {Container,Row} from "react-bootstrap"
 
 
 const ItemDetail =({item}) =>{
@@ -8,7 +8,7 @@ const ItemDetail =({item}) =>{
     return(
         <>
         {
-            item.thumbnail
+            item
             ?
             <>
             

@@ -11,11 +11,11 @@ const ItemListContainer =()=>{
 
   useEffect(()=>{
     if(idCategory==undefined){
-    customFetch(2000,Products)
+    customFetch(1500,Products)
       .then(res =>setItems(res))
       .catch(err=>console.log(err))
     }else{
-      customFetch(2000,Products.filter(item=> item.type === idCategory))
+      customFetch(1500,Products.filter(item=> item.type === idCategory))
       .then(res =>setItems(res))
       .catch(err=>console.log(err))
       
