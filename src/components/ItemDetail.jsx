@@ -33,7 +33,7 @@ const ItemDetail =({item}) =>{
                         {
                             itemCount=== 0
                             ?<ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/>
-                            :<p>hola</p>
+                            :<p>En proceso de programacion...</p>
                         }
                         <br></br>
                         

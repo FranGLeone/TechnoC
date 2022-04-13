@@ -1,5 +1,5 @@
-import styled from "styled-components"
-
+import styled, {keyframes} from "styled-components"
+import {fadeIn, fadeOut} from "react-animations"
 
 //SearchForm
 const SearchContainer = styled.div`
@@ -21,6 +21,14 @@ const Input = styled.input`
     }
 `;
 
+const Cargando = styled.span`
+animation: 1.5s ${keyframes`${fadeIn}`} infinite
+`
+
+const Logo = styled.span`
+animation: ${keyframes`${fadeIn}`} 4s  1
+`
+
 export {
-    Input, SearchContainer
+    Input, SearchContainer, Cargando, Logo
 }

@@ -11,7 +11,7 @@ const ItemListContainer =()=>{
 
   useEffect(()=>{
     if(idCategory==undefined){
-    customFetch(1500,Products)
+    customFetch(3000,Products)
       .then(res =>setItems(res))
       .catch(err=>console.log(err))
     }else{

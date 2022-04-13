@@ -2,7 +2,7 @@ import {Navbar, Nav, Container, NavDropdown,} from "react-bootstrap";
 import logo from "../assets/images/logo.png"
 import CartWidget from "./CartWidget"
 import SearchIcon from '@material-ui/icons/Search';
-import { SearchContainer,Input } from './styledComponents';
+import { SearchContainer,Input, Logo } from './styledComponents';
 
 const NavBar = () =>{
     return(
@@ -11,14 +11,14 @@ const NavBar = () =>{
     <Navbar fixed="top" className="NavbarColor" variant="dark">
     <Container>
       <Navbar.Brand href="/">
-      <img
+      <Logo> <img
             alt=""
             src={logo}
             width="50"
             height="50"
             className="d-inline-block"
           />{' '}
-        <span className="NavbarTitulo">TechnoCraft</span>
+       <span className="NavbarTitulo">TechnoCraft</span></Logo> 
       
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -44,7 +44,7 @@ const NavBar = () =>{
           <Nav.Link href="#link">Crear cuenta</Nav.Link>
           <Nav.Link href="#link">Iniciar sesión</Nav.Link>                        
         </Nav>                    
-          <CartWidget />
+          <CartWidget href="./Cart"/>
       </Navbar.Collapse>
     </Container>
   </Navbar>
