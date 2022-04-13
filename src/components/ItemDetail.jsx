@@ -1,7 +1,9 @@
 import ItemCount from "./ItemCount";
 import {Container,Row} from "react-bootstrap"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import {Cargando} from './styledComponents';
 import { useState } from "react";
+import CheckoutButton from "./CheckoutButton";
 
 
 const ItemDetail =({item}) =>{
@@ -33,7 +35,7 @@ const ItemDetail =({item}) =>{
                         {
                             itemCount=== 0
                             ?<ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/>
-                            :<p>En proceso de programacion...</p>
+                            :<CheckoutButton/>
                         }
                         <br></br>
                         
@@ -46,7 +48,7 @@ const ItemDetail =({item}) =>{
                     </div>          
                 </Row>
             </Container>
-            : <div className="Cargando">Cargando...</div>
+            :<Cargando className="Cargando">Cargando...</Cargando>
         
         
         }

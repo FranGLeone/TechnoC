@@ -85,7 +85,7 @@ export const Products = [
       {
         id: 8,
         type: "Placa de video",
-        name: "Placa de Video Zotac GeForce GTX 1660 SUPER 6GB GDDR6 AMP Edition",
+        name: "Placa de Video Zotac GeForce GTX 1660 SUPER 6GB GDDR6 AMP",
         stock: 10,
         price: "93.710",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
@@ -97,7 +97,7 @@ export const Products = [
       {
         id: 9,
         type: "Placa de video",
-        name: "Placa de Video Asrock Radeon RX 6800 16GB GDDR6 Phantom Gaming D OC",
+        name: "Placa de Video Asrock Radeon RX 6800 16GB GDDR6 Phantom Gaming",
         stock: 6,
         price: "215.000",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
@@ -133,7 +133,7 @@ export const Products = [
       {
         id: 12,
         type: "Procesador",
-        name: "Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler",
+        name: "Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth ",
         stock: 15,
         price: "32.330",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",

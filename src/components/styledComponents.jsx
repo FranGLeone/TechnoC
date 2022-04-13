@@ -1,7 +1,6 @@
 import styled, {keyframes} from "styled-components"
-import {fadeIn, fadeOut} from "react-animations"
+import {fadeIn} from "react-animations"
 
-//SearchForm
 const SearchContainer = styled.div`
     background-color: transparent;
     border: none;
@@ -29,6 +28,25 @@ const Logo = styled.span`
 animation: ${keyframes`${fadeIn}`} 4s  1
 `
 
+const Name = styled.div`
+height: 130px;
+text-align: left;`
+
+const Price = styled.div`
+    font-weight: 100;
+    font-size: 26px;
+    text-align: left;
+    padding-top: 5px;
+`
+
+
+
+
+
+
+
+
+
 export {
-    Input, SearchContainer, Cargando, Logo
+    Input, SearchContainer, Cargando, Logo, Name, Price
 }

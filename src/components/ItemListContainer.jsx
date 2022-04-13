@@ -24,7 +24,7 @@ const ItemListContainer =()=>{
   },[idCategory])
 
   return(
-    <Container > 
+    <Container className="hola"> 
       <Row className="DivProductos">
         <ItemList items={items}/>
       </Row>  
