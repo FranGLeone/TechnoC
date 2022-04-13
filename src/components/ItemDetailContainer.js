@@ -16,7 +16,7 @@ const ItemDetailContainer =()=>{
     },[])
   
     return(
-      
+          
           <ItemDetail item={item}/>
          
     )

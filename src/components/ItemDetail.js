@@ -7,12 +7,12 @@ const ItemDetail =({item}) =>{
 
     return(
         <>
-       
-          
-            
+        {
+            item && item.thumbnail
+            ? 
             <Container className="DivDetalles">
                 <Row>
-                    <div className="col-lg-5 ImgDetalles"><img src={item.thumbnail}></img></div>
+                    <div className="col-lg-5 ImgDetalles"><img src={item.thumbnail} alt={item.name}></img></div>
                     <div className="col-lg-7 "><p className="Name">{item.name}</p>
                         <hr></hr>
                         <div className="Price">Precio: ${item.price}</div> 
@@ -24,16 +24,18 @@ const ItemDetail =({item}) =>{
                             <hr></hr>
                             <h6>{item.description}</h6>
                         </div>    
-                    </div>
-                    
+                    </div>          
                 </Row>
             </Container>
-           
-         
+            : <p>Cargando...</p>
+        
+        
+        }
+
+          
+                  
         </>
     )
     
 }
-
-
 export default ItemDetail; 
