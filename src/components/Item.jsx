@@ -14,7 +14,12 @@ const Item =({id,name,stock,price,thumbnail}) =>{
                 <br></br>
                 <Card.Text><h6 className="center">{stock} unidades disponibles</h6></Card.Text>
                  <br></br>
-                 <Card.Text><Link to={`/item/${id}`} className="center "><h6 className="boton">Comprar</h6></Link></Card.Text>
+                 {
+                     stock >= 1
+                     ?<Card.Text><Link to={`/item/${id}`} className="center"><h6 className="Boton">Comprar</h6></Link></Card.Text>
+                     :<Card.Text><Link to={`/item/${id}`} className="center"><h6 className="Boton2">Sin stock</h6></Link></Card.Text>
+                 }
+                 
             </Card.Body>
         </Card>
     )

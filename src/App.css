@@ -54,13 +54,16 @@
    display: flex;
    align-items: center;
    padding: 0px;
-   
+   margin-top: 64px;
 }
 
 
 
 .ImgDetalles{
     padding-right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Name{
@@ -90,10 +93,40 @@
     padding-left: 10px;
 }
 
-.boton{
+.Boton{
     padding: 10px;
     border: 1px solid black;
-    background-color: blue;
+    background-color: rgb(59, 59, 255);
     color: white;
     text-align: center;
+}
+
+.Boton2{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(255, 87, 87);
+    color: white;
+    text-align: center;
+}
+
+.Cargando{
+    height: 764px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.IconoBusq:hover{
+    
+        background-color: #2b348ab0;
+        transform: scale(1.5);
+        transition: all 0.5s ease-out
+        
+    
+}
+
+.FlechaBack{
+    color: rgb(17, 29, 54);
+
 }
