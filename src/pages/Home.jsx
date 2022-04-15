@@ -7,24 +7,26 @@ import ItemDetailContainer from "../components/ItemDetailContainer";
 import NavBar from '../components/NavBar'
 import Footer from "../components/Footer";
 import Cart from '../components/Cart';
+import CartContextProvider from '../components/CartContext';
 
 
 
 const Home=()=>{
     return(
         <>
-        <BrowserRouter>
-            <NavBar/>
-            
-            <Routes>
-                <Route path="/" element={<ItemListContainer/>}/>
-                <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
-                <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
-                <Route path="/Cart" element={<Cart/>}/>
-            </Routes>
-            <Footer/>
-        </BrowserRouter>
-        </>
+        <CartContextProvider>
+            <BrowserRouter>
+                <NavBar/>   
+                <Routes>
+                    <Route path="/" element={<ItemListContainer/>}/>
+                    <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
+                    <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
+                    <Route path="/Cart" element={<Cart/>}/>
+                </Routes>
+                <Footer/>
+            </BrowserRouter>
+        </CartContextProvider>
+        </> 
     )
 }
 
