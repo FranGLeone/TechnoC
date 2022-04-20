@@ -4,14 +4,18 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import {Cargando} from './styledComponents';
 import { useState, useContext } from "react";
 import CheckoutButton from "./CheckoutButton";
+import { CartContext } from "./CartContext";
 
 
 const ItemDetail =({item}) =>{
 
     const [itemCount,setItemCount] =useState(0)
-    const onAdd=(quantity) =>{
-        alert("Seleccionaste " + quantity + " productos.")
-        setItemCount(quantity)
+    const context = useContext(CartContext);
+
+    const onAdd=(qty) =>{
+        alert("Seleccionaste " + qty + " productos.")
+        setItemCount(qty)
+        context.addItem(item,qty);
     }
 
 

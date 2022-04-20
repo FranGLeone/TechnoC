@@ -39,14 +39,26 @@ const Price = styled.div`
     padding-top: 5px;
 `
 
+const BtnVaciarCarrito = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 230px;
+   
+    
+`
 
+const DivCarrito = styled.div`
+`
 
-
-
-
-
+const Product = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 
 export {
-    Input, SearchContainer, Cargando, Logo, Name, Price
+    Input, SearchContainer, Cargando, Logo, Name, Price,
+    BtnVaciarCarrito, DivCarrito, Product
 }

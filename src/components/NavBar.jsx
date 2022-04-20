@@ -44,7 +44,7 @@ const NavBar = () =>{
           <Nav.Link href="#link">Crear cuenta</Nav.Link>
           <Nav.Link href="#link">Iniciar sesión</Nav.Link>                        
         </Nav>                    
-          <CartWidget href="/Cart"/>
+          <CartWidget/>
       </Navbar.Collapse>
     </Container>
   </Navbar>

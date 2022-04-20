@@ -17,12 +17,12 @@ const Home=()=>{
         <CartContextProvider>
             <BrowserRouter>
                 <NavBar/>   
-                <Routes>
-                    <Route path="/" element={<ItemListContainer/>}/>
-                    <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
-                    <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
-                    <Route path="/Cart" element={<Cart/>}/>
-                </Routes>
+                    <Routes>
+                        <Route path="/" element={<ItemListContainer/>}/>
+                        <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
+                        <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
+                        <Route path="/Cart" element={<Cart/>}/>
+                    </Routes>
                 <Footer/>
             </BrowserRouter>
         </CartContextProvider>
