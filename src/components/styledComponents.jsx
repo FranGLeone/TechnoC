@@ -50,15 +50,42 @@ const BtnVaciarCarrito = styled.div`
 `
 
 const DivCarrito = styled.div`
+    background-color: #eeeeee;
+    border-left: 8px outset rgb(18, 68, 175);
+    border-top: 3px inset white;
+    border-bottom: 3px outset white;
+    border-right: 3px outset white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px
+
 `
 
 const Product = styled.div`
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    
+`
+
+const ImgCarrito = styled.img`
+    margin: 15px;
+    width: 150px;
+    border: 4px outset #eeeeee;
+    padding: 8px;
+    background-color: white;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.05);
+  }
+    
 `;
+
+
+
+;
+
 
 
 export {
     Input, SearchContainer, Cargando, Logo, Name, Price,
-    BtnVaciarCarrito, DivCarrito, Product
+    BtnVaciarCarrito, DivCarrito, Product, ImgCarrito
 }

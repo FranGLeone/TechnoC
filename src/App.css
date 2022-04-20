@@ -1,4 +1,6 @@
-
+#root{
+    background-color: white
+}
 
 .NavbarColor{
     background-color: rgb(17, 29, 54);
@@ -39,6 +41,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top:60px;
+    
+}
+
+.CardProductos{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:60px;
+    border: 5px  outset #eeeeee;
 }
 
 .imgCard{
@@ -47,8 +59,8 @@
 
 
 .imgCard:hover{
-    padding: 5px;
-    transition: all 0.5s ease-out
+    transition: all 0.7s;
+    transform: scale(1.15);
 }
 
 .DivDetalles{
@@ -135,7 +147,7 @@
    
 }
 
-.h66{
+.QtyCarrito{
     color: rgb(255, 255, 255);
     font-size: 17px;
     font-weight: 600;
@@ -147,5 +159,6 @@
 
 .general{
     height: 764px;
+     
 }
-    
+

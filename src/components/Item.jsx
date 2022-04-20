@@ -4,10 +4,10 @@ import {Name, Price} from "./styledComponents"
 
 const Item =({id,name,stock,price,thumbnail}) =>{
     return(
-        <Card className="DivProductos" style={{ width: '18rem' }}>
+        <Card className="CardProductos" style={{ width: '18rem' }}>
             <Card.Img className="imgCard" variant="top" src={thumbnail}  />
             <Card.Body>
-                <div className="CardProductos"><Card.Title><Name>{name}</Name></Card.Title>
+                <div><Card.Title><Name>{name}</Name></Card.Title>
                 <hr></hr>
                 </div>
                 <Card.Title><Price>${price}</Price></Card.Title>

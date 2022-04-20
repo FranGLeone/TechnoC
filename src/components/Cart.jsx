@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {BtnVaciarCarrito, Logo, DivCarrito, Product} from "./styledComponents"
+import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito} from "./styledComponents"
 import { Container} from "react-bootstrap";
 
 const Cart=() =>{
@@ -23,12 +23,14 @@ const Cart=() =>{
             {
                 context.cartList.length > 0 &&
                     context.cartList.map(item=>
+                        <>
                         <Product key={item.idItem}>
-                            <img src={item.imgItem}></img>
+                            <ImgCarrito src={item.imgItem}/>
                             <div>{item.nameItem}</div>
                             <div>{item.priceItem}</div>
 
                         </Product>
+                        </>
                         )
             }
             </DivCarrito>

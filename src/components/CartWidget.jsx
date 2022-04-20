@@ -11,7 +11,7 @@ const CartWidget =() =>{
         <>
           <ul className="right hide-on-med-and-down">
             <li><a href='/Cart'><i className="large material-icons">shopping_cart</i></a></li>
-            <span className="h66">{context.calcItemsQty()}</span>
+            <span className="QtyCarrito">{context.calcItemsQty()}</span>
           </ul>
         </>
     )
