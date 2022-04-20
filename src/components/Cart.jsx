@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito, NameCarrito, PriceCarrito, DetallesCart} from "./styledComponents"
 import { Container} from "react-bootstrap";
-
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const Cart=() =>{
     const context = useContext(CartContext);
@@ -11,7 +11,7 @@ const Cart=() =>{
         <>
         <Container className='general'>
             <BtnVaciarCarrito>
-            <a href="/" className="FlechaBack">Volver al catálogo </a>
+            <a href="/" className="FlechaBack"> <ArrowBackIosIcon/> Volver al catálogo </a>
             
             {
                 (context.cartList.length > 0)

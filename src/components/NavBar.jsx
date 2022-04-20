@@ -2,6 +2,7 @@ import {Navbar, Nav, Container, NavDropdown,} from "react-bootstrap";
 import logo from "../assets/images/logo.png"
 import CartWidget from "./CartWidget"
 import { SearchContainer,Input, Logo } from './styledComponents';
+import SearchIcon from '@mui/icons-material/Search';
 
 const NavBar = () =>{
     return(
@@ -36,7 +37,7 @@ const NavBar = () =>{
           </NavDropdown>
           <SearchContainer>
                 <Input/>
-     
+                <SearchIcon className="IconoBusq" onClick={()=> alert("Usted quiso buscar algo...pero todavia no esta programado :)")}/>
             </SearchContainer>
         </Nav>
         <Nav className="mx-4">

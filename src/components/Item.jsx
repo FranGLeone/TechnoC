@@ -1,6 +1,7 @@
 import {Card} from "react-bootstrap"
 import {Link} from "react-router-dom"
 import {Name, Price} from "./styledComponents"
+import Button from '@mui/material/Button';
 
 const Item =({id,name,stock,price,thumbnail}) =>{
     return(
