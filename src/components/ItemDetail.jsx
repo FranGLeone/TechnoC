@@ -2,7 +2,7 @@ import ItemCount from "./ItemCount";
 import {Container,Row} from "react-bootstrap"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import {Cargando} from './styledComponents';
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CheckoutButton from "./CheckoutButton";
 
 
