@@ -10,7 +10,7 @@ const CartWidget =() =>{
     return(
         <>
           <ul className="right hide-on-med-and-down">
-            <li><a href='/Cart'><i className="large material-icons">shopping_cart</i></a></li>
+            
             <span className="QtyCarrito">{context.calcItemsQty()}</span>
           </ul>
         </>

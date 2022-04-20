@@ -1,8 +1,8 @@
 import { useContext, useEffect } from 'react';
 import { CartContext } from './CartContext';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito} from "./styledComponents"
+import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito, NameCarrito, PriceCarrito, DetallesCart} from "./styledComponents"
 import { Container} from "react-bootstrap";
+
 
 const Cart=() =>{
     const context = useContext(CartContext);
@@ -11,7 +11,7 @@ const Cart=() =>{
         <>
         <Container className='general'>
             <BtnVaciarCarrito>
-            <a href="/" className="FlechaBack"><ArrowBackIosIcon/>Volver al catálogo </a>
+            <a href="/" className="FlechaBack">Volver al catálogo </a>
             
             {
                 (context.cartList.length > 0)
@@ -25,10 +25,19 @@ const Cart=() =>{
                     context.cartList.map(item=>
                         <>
                         <Product key={item.idItem}>
+                            <div className='hola'>
                             <ImgCarrito src={item.imgItem}/>
-                            <div>{item.nameItem}</div>
-                            <div>{item.priceItem}</div>
-
+                            <NameCarrito>{item.nameItem}</NameCarrito>
+                            </div>
+                            <DetallesCart>
+                        
+                            <div>{item.qtyItem} item(s) seleccionados</div>
+                            <PriceCarrito> 
+                                ${item.priceItem} c/u. <br />
+                                ${context.totalPerItem(item.idItem)}
+                            </PriceCarrito>
+                           </DetallesCart>
+                                
                         </Product>
                         </>
                         )

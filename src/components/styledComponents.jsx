@@ -61,8 +61,8 @@ const DivCarrito = styled.div`
 `
 
 const Product = styled.div`
-    display: flex;
-    justify-content: space-between;
+    
+    
     
 `
 
@@ -79,7 +79,27 @@ const ImgCarrito = styled.img`
     
 `;
 
+const NameCarrito = styled.div`
+    display: flex;
+    padding: 0px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 500
+    
+`
+const PriceCarrito = styled.span`
+    display: flex;
+    padding: 0px;
+    font-size: 20px;
+    align-items: center
+` 
 
+const DetallesCart= styled.div`
+    display: flex;
+    justify-content:space-between
+
+
+`
 
 ;
 
@@ -87,5 +107,6 @@ const ImgCarrito = styled.img`
 
 export {
     Input, SearchContainer, Cargando, Logo, Name, Price,
-    BtnVaciarCarrito, DivCarrito, Product, ImgCarrito
+    BtnVaciarCarrito, DivCarrito, Product, ImgCarrito,
+    NameCarrito, PriceCarrito, DetallesCart
 }

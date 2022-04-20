@@ -34,6 +34,16 @@ const CartContextProvider=({children})=>{
         return qtys.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
     }
 
+    const deleteItem = (id) =>{
+        let result = cartList.filter(item=> item.idItem != id);
+        setCartList(result)
+    }
+
+    const totalPerItem = (idItem) => {
+        let index = cartList.map(item => item.idItem).indexOf(idItem);
+        return cartList[index].priceItem * cartList[index].qtyItem;
+    }
+
 
 
 
@@ -43,7 +53,9 @@ const CartContextProvider=({children})=>{
             cartList,
             addItem,
             removeAllItems,
-            calcItemsQty          
+            calcItemsQty,
+            deleteItem,
+            totalPerItem,  
             
             }}>
                 {children}

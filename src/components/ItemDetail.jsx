@@ -28,7 +28,7 @@ const ItemDetail =({item}) =>{
             <Container className="DivDetalles">
                 <Row>
                     <div>
-                    <a href="/" className="FlechaBack"><ArrowBackIosIcon/>Volver al catálogo </a>
+                    <a href="/" className="FlechaBack">Volver al catálogo </a>
                     </div>
                     <div className="col-lg-5 ImgDetalles">
                         <img src={item.thumbnail} alt={item.name}></img>
