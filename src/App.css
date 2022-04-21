@@ -157,11 +157,15 @@
 
 }
 
-.general{
-    height: 764px;
-     
+.link{
+    color: black;
 }
 
-.hola{
-    display: flex;
+.link2:hover{
+    color: white;
+}
+
+.minheight{
+    position: relative;
+    min-height: 764px;
 }

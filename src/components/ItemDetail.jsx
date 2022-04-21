@@ -5,6 +5,7 @@ import { useState, useContext } from "react";
 import CheckoutButton from "./CheckoutButton";
 import { CartContext } from "./CartContext";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import {Link} from "react-router-dom"
 
 const ItemDetail =({item}) =>{
 
@@ -26,7 +27,7 @@ const ItemDetail =({item}) =>{
             <Container className="DivDetalles">
                 <Row>
                     <div>
-                    <a href="/" className="FlechaBack"> <ArrowBackIosIcon/> Volver al catálogo </a>
+                    <Link to="/" className="FlechaBack"> <ArrowBackIosIcon/> Volver al catálogo </Link>
                     </div>
                     <div className="col-lg-5 ImgDetalles">
                         <img src={item.thumbnail} alt={item.name}></img>

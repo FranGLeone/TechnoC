@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.png"
 import CartWidget from "./CartWidget"
 import { SearchContainer,Input, Logo } from './styledComponents';
 import SearchIcon from '@mui/icons-material/Search';
+import {Link} from "react-router-dom"
 
 const NavBar = () =>{
     return(
@@ -10,7 +11,7 @@ const NavBar = () =>{
       
     <Navbar fixed="top" className="NavbarColor" variant="dark">
     <Container>
-      <Navbar.Brand href="/">
+      <Navbar.Brand><Link to="/" className="link2">
       <Logo> <img
             alt=""
             src={logo}
@@ -18,7 +19,7 @@ const NavBar = () =>{
             height="50"
             className="d-inline-block"
           />{' '}
-       <span className="NavbarTitulo">TechnoCraft</span></Logo> 
+       <span className="NavbarTitulo">TechnoCraft</span></Logo></Link> 
       
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,14 +27,14 @@ const NavBar = () =>{
         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
           <Nav.Link href="#action2">Arma tu PC</Nav.Link>
           <NavDropdown title="Productos" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="/">Todos</NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/"className="link">Todos</Link></NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/category/Mother">Mothers</NavDropdown.Item>
-            <NavDropdown.Item href="/category/Memoria RAM">Memorias RAM</NavDropdown.Item>
-            <NavDropdown.Item href="/category/Almacenamiento">Procesadores</NavDropdown.Item>
-            <NavDropdown.Item href="/category/Placa de video">Placas de video</NavDropdown.Item>
-            <NavDropdown.Item href="/category/Procesador">Procesadores</NavDropdown.Item>
-            <NavDropdown.Item href="/category/Gabinete">Gabinetes</NavDropdown.Item>
+            <NavDropdown.Item ><Link to="/category/Mother"className="link">Mothers</Link></NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/category/Memoria RAM"className="link">Memorias RAM</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to="/category/Almacenamiento"className="link">Procesadores</Link></NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/category/Placa de video"className="link">Placas de video</Link></NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/category/Procesador"className="link">Procesadores</Link></NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/category/Gabinete"className="link">Gabinetes</Link></NavDropdown.Item>
           </NavDropdown>
           <SearchContainer>
                 <Input/>

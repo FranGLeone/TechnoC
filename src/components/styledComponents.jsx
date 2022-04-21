@@ -50,20 +50,25 @@ const BtnVaciarCarrito = styled.div`
 `
 
 const DivCarrito = styled.div`
-    background-color: #eeeeee;
-    border-left: 8px outset rgb(18, 68, 175);
-    border-top: 3px inset white;
-    border-bottom: 3px outset white;
-    border-right: 3px outset white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px
+     
 
 `
 
 const Product = styled.div`
     display: flex;
     justify-content:space-between;
-    
+    background-color: #eeeeee;
+    border-left: 8px outset rgb(18, 68, 175);
+    border-top: 3px inset white;
+    border-bottom: 3px outset white;
+    border-right: 3px outset white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top 20px;
+    margin-bottom 20px;
+    transition: all 0.8s ease;
+    &:hover {
+      transform: scale(1.05);}
 `
 
 const ImgCarrito = styled.img`

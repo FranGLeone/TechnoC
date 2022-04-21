@@ -4,6 +4,7 @@ import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito, NameCarrito, Pr
 import { Container} from "react-bootstrap";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import DeleteForeverSharpIcon from '@mui/icons-material/DeleteForeverSharp';
+import {Link} from "react-router-dom"
 
 
 
@@ -12,9 +13,9 @@ const Cart=() =>{
     console.log(context.cartList)
     return(
         <>
-        <Container className='general'>
+        <Container className='minheight'>
             <BtnVaciarCarrito>
-            <a href="/" className="FlechaBack"> <ArrowBackIosIcon/> Volver al catálogo </a>
+            <Link to="/" className="FlechaBack"> <ArrowBackIosIcon/> Volver al catálogo </Link>
             
             {
                 (context.cartList.length > 0)
