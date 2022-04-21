@@ -3,25 +3,30 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import customFetch from "../util/CustomFetch";
 import { Container, Row} from "react-bootstrap";
-const {Products}=require("../util/Products")
+import { collection, getDocs } from "firebase/firestore";
+import db from "../util/FirebaseConfig"
+import { async } from "@firebase/util";
 
 const ItemListContainer =()=>{
   const [items,setItems] = useState([])
   const {idCategory} = useParams() 
 
+  //componentDidUpdate
   useEffect(()=>{
-    if(idCategory==undefined){
-    customFetch(3000,Products)
-      .then(res =>setItems(res))
-      .catch(err=>console.log(err))
-    }else{
-      customFetch(1500,Products.filter(item=> item.type === idCategory))
-      .then(res =>setItems(res))
-      .catch(err=>console.log(err))
-      
-    }
-    console.log(idCategory)
-  },[idCategory])
+    const fetchFromFirestore = async()=>{
+    const querySnapshot = await getDocs(collection(db, "products"));
+    const dataFromFirestore = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+    return dataFromFirestore;
+  }
+  fetchFromFirestore()
+    .then(result=>setItems(result))
+    .catch(err=> console.log(err));
+  },[items])
+
+
 
   return(
     <Container> 
