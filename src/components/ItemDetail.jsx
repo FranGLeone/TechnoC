@@ -12,7 +12,6 @@ const ItemDetail =({item}) =>{
     const context = useContext(CartContext);
 
     const onAdd=(qty) =>{
-        alert("Seleccionaste " + qty + " productos.")
         setItemCount(qty)
         context.addItem(item,qty);
     }
