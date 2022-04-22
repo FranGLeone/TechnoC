@@ -169,3 +169,8 @@
     position: relative;
     min-height: 764px;
 }
+
+.ResumenCompra{
+    display: flex;
+    justify-content: center;
+}

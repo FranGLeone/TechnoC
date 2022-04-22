@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { CartContext } from './CartContext';
-import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito, NameCarrito, PriceCarrito, QtyCarrito} from "./styledComponents"
+import {BtnVaciarCarrito, Logo, DivCarrito, Product, ImgCarrito, NameCarrito, PriceCarrito, QtyCarrito, ResumenCarrito,ItemResumen, TituloResumen, TotalResumen} from "./styledComponents"
 import { Container} from "react-bootstrap";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import DeleteForeverSharpIcon from '@mui/icons-material/DeleteForeverSharp';
@@ -23,7 +23,6 @@ const Cart=() =>{
                 : <Logo>Tu carrito está vacío!</Logo>
             }
             </BtnVaciarCarrito>
-            <DivCarrito>
             {
                 context.cartList.length > 0 &&
                     context.cartList.map(item=>
@@ -46,8 +45,26 @@ const Cart=() =>{
                         </>
                         )
             }
-            </DivCarrito>
             
+        </Container>
+        <Container className='ResumenCompra'>
+        <ResumenCarrito>
+            <TituloResumen> 
+                <span>Resumen de compra</span>
+            </TituloResumen>
+            <ItemResumen>
+                Subtotal: <span>${context.calcSubTotal()}</span>
+            </ItemResumen>
+            <ItemResumen>
+                Impuestos (IVA 21%): <span>${context.calcTaxes()}</span>
+            </ItemResumen>
+            <ItemResumen>
+                Descuento especial (Mayo): <span>${context.calcDiscount()}</span>
+            </ItemResumen>
+            <TotalResumen>
+
+            </TotalResumen>
+        </ResumenCarrito>
         </Container>
         
         </>

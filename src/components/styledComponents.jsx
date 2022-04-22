@@ -30,7 +30,9 @@ animation: ${keyframes`${fadeIn}`} 4s  1
 
 const Name = styled.div`
 height: 130px;
-text-align: left;`
+text-align: left;
+font-weight:400;
+`
 
 const Price = styled.div`
     font-weight: 100;
@@ -106,11 +108,38 @@ const QtyCarrito = styled.span`
     padding-left: 20px;
 
 `
+const ResumenCarrito = styled.div`
+    width: 500px;
+    height: 300px;
+    background-color: #eeeeee;
+    border-left: 8px outset rgb(4, 204, 4);
+    border-top: 3px inset white;
+    border-bottom: 3px outset white;
+    border-right: 3px outset white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top 20px;
+    margin-bottom 20px;
+`
+const ItemResumen = styled.div`
 
+`
+
+const TituloResumen = styled.div`
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+`
+
+const TotalResumen = styled.div`
+
+`
 ;
 
 export {
     Input, SearchContainer, Cargando, Logo, Name, Price,
     BtnVaciarCarrito, DivCarrito, Product, ImgCarrito,
-    NameCarrito, PriceCarrito, QtyCarrito
+    NameCarrito, PriceCarrito, QtyCarrito, ResumenCarrito,
+    ItemResumen, TituloResumen, TotalResumen,
 }
