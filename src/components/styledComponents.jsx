@@ -109,8 +109,8 @@ const QtyCarrito = styled.span`
 
 `
 const ResumenCarrito = styled.div`
-    width: 500px;
-    height: 300px;
+    width: 450px;
+    height: 370px;
     background-color: #eeeeee;
     border-left: 8px outset rgb(4, 204, 4);
     border-top: 3px inset white;
@@ -122,7 +122,11 @@ const ResumenCarrito = styled.div`
     margin-bottom 20px;
 `
 const ItemResumen = styled.div`
-
+    margin: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px
 `
 
 const TituloResumen = styled.div`
@@ -133,7 +137,12 @@ const TituloResumen = styled.div`
 `
 
 const TotalResumen = styled.div`
-
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 `
 ;
 

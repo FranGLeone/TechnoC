@@ -41,8 +41,12 @@ const ItemDetail =({item}) =>{
                             :<CheckoutButton/>
                         }
                         <br></br>
+                        {
+                            item.stock > 1
+                            ? <div className="Stock">¡{item.stock} unidades disponibles!</div>
+                            : <div className="Stock">¡Sin stock! </div>
+                        }
                         
-                        <div className="Stock">¡{item.stock} unidades disponibles!</div>
                         <div className="Desc">
                             <p className="Name">Caracteristicas Generales.</p>
                             <hr></hr>

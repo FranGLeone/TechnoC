@@ -54,11 +54,11 @@ const CartContextProvider=({children})=>{
     }
     
     const calcDiscount = ()=>{
-        return ((calcSubTotal + calcTaxes) * 0,10)
+        return (calcSubTotal() + calcTaxes()) * 0.15
     }
 
     const calcTotal = () => {
-        return (calcSubTotal + calcTaxes - calcDiscount);
+        return (calcSubTotal() + calcTaxes() - calcDiscount());
     }
 
 
