@@ -5,7 +5,7 @@ const CheckoutButton=()=>{
 
     <>
     <div className="hola">
-        <Link to="/Cart" className="center"><button className="waves-effect waves-light btn blue">Finalizar compra</button></Link>
+        <Link to="/Cart" className="center"><button className="waves-effect waves-light btn blue">Ir al carrito</button></Link>
     </div>
     </>
     
