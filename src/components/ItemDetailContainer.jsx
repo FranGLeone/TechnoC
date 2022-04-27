@@ -1,16 +1,14 @@
 import ItemDetail from "./ItemDetail";
 import { useEffect, useState } from "react";
-import customFetch from "../util/CustomFetch";
 import { useParams } from "react-router-dom";
-const {Products}=require("../util/Products");
-
+import {firestoreFetchDetail} from "../util/FirestoreFetch";
 
 const ItemDetailContainer =()=>{
     const [item,setItem] = useState([])
     const {idItem} = useParams();
   
     useEffect(()=>{
-      customFetch(2000,Products.find(item=>item.id === parseInt(idItem)))  //find
+      firestoreFetchDetail(idItem) 
         .then(res =>setItem(res))
         .catch(err=>console.log(err))
     },[])
