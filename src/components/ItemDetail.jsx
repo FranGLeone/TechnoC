@@ -42,7 +42,12 @@ const ItemDetail =({item}) =>{
                         }
                         <br></br>
                         
-                        <div className="Stock">¡{item.stock} unidades disponibles!</div>
+                        {
+                            item.stock > 1
+                            ? <div className="Stock">¡{item.stock} unidades disponibles!</div>
+                            : <div className="Stock">¡Sin stock! </div>
+                        }
+                        
                         <div className="Desc">
                             <p className="Name">Caracteristicas Generales.</p>
                             <hr></hr>

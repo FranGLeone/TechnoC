@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext} from 'react';
 import { CartContext } from './CartContext';
 import {BtnVaciarCarrito, Logo, Product, ImgCarrito, NameCarrito, PriceCarrito, QtyCarrito, ResumenCarrito,ItemResumen, TituloResumen, TotalResumen} from "./styledComponents"
 import { Container} from "react-bootstrap";
@@ -6,11 +6,13 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import DeleteForeverSharpIcon from '@mui/icons-material/DeleteForeverSharp';
 import {Link} from "react-router-dom"
 import FormatNumber from '../util/FormatNumber';
-
+import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
+import db from "../util/FirebaseConfig";
 
 const Cart=() =>{
     const context = useContext(CartContext);
     console.log(context.cartList)
+    
     return(
         <>
         <Container className='minheight'>
@@ -63,7 +65,7 @@ const Cart=() =>{
                 </TotalResumen>
                 <hr />
                 <div className='center'>
-                <a href="/"><button className="waves-effect waves-light btn green" onClick={()=>{alert("¡Finalizaste tu compra con éxito!")}}>Finalizar Compra</button></a>
+                <a href="/"><button className="waves-effect waves-light btn green" onClick={<Link to={"/"}></Link>}>Finalizar Compra</button></a>
                 </div>
             </ResumenCarrito>
             }
