@@ -126,7 +126,7 @@
 .Cargando{
     height: 764px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 30px;
     font-weight: 100;

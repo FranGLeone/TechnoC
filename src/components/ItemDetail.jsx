@@ -49,7 +49,9 @@ const ItemDetail =({item}) =>{
                         <div className="Desc">
                             <p className="Name">Caracteristicas Generales.</p>
                             <hr></hr>
-                            <h6>{item.description}</h6>
+                            <div>
+                                <h6>{item.description}</h6>
+                            </div>
                         </div>    
                     </div>          
                 </Row>

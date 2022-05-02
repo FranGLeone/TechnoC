@@ -51,11 +51,6 @@ const BtnVaciarCarrito = styled.div`
     
 `
 
-const DivCarrito = styled.div`
-     
-
-`
-
 const Product = styled.div`
     display: flex;
     justify-content:space-between;
@@ -148,7 +143,7 @@ const TotalResumen = styled.div`
 
 export {
     Input, SearchContainer, Cargando, Logo, Name, Price,
-    BtnVaciarCarrito, DivCarrito, Product, ImgCarrito,
+    BtnVaciarCarrito,  Product, ImgCarrito,
     NameCarrito, PriceCarrito, QtyCarrito, ResumenCarrito,
     ItemResumen, TituloResumen, TotalResumen,
 }

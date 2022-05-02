@@ -27,10 +27,11 @@ const ItemListContainer =()=>{
 
 
   return(
-    <Container> 
-      <Row className="DivProductos">
+    <Container > 
+        <div className="DivProductos">
         <ItemList items={items}/>
-      </Row>  
+        </div>
+      
 
     </Container>   
   )
