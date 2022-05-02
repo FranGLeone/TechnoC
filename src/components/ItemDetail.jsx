@@ -17,8 +17,6 @@ const ItemDetail =({item}) =>{
         context.addItem(item,qty);
     }
 
-
-
     return(
         <>
         {
@@ -43,7 +41,7 @@ const ItemDetail =({item}) =>{
                         <br></br>
                         
                         {
-                            item.stock > 1
+                            item.stock >= 1
                             ? <div className="Stock">¡{item.stock} unidades disponibles!</div>
                             : <div className="Stock">¡Sin stock! </div>
                         }

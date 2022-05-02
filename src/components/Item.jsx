@@ -14,7 +14,7 @@ const Item =({id,name,stock,price,thumbnail}) =>{
                 <Card.Title><Price>${price}</Price></Card.Title>
                 <br></br>
                 {
-                    stock > 1
+                    stock >= 1
                     ? <Card.Text><h6 className="center">{stock} unidades disponibles</h6></Card.Text>
                     : <Card.Text><h6 className="center">¡SIN STOCK!</h6></Card.Text>
 

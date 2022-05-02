@@ -12,6 +12,47 @@ import db from "../util/FirebaseConfig";
 const Cart=() =>{
     const context = useContext(CartContext);
     console.log(context.cartList)
+    const createOrder = () => {
+        const itemsForDB = context.cartList.map(item => ({
+          id: item.idItem,
+          title: item.nameItem,
+          price: item.costItem
+        }));
+    
+        context.cartList.forEach(async (item) => {
+          const itemRef = doc(db, "products", item.idItem);
+          await updateDoc(itemRef, {
+            stock: increment(-item.qtyItem)
+          });
+        });
+    
+        let order = {
+          buyer: {
+            name: "Lila Sciorra",
+            email: "Lilita@gmail.com",
+            phone: "1122334455"
+          },
+          total: context.calcTotal(),
+          items: itemsForDB,
+          date: serverTimestamp()
+        };
+      
+        console.log(order);
+        
+        const createOrderInFirestore = async () => {
+          // Add a new document with a generated id
+          const newOrderRef = doc(collection(db, "orders"));
+          await setDoc(newOrderRef, order);
+          return newOrderRef;
+        }
+      
+        createOrderInFirestore()
+          .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+          .catch(err => console.log(err));
+      
+        context.removeAllItems();
+      
+      }
     
     return(
         <>
@@ -65,7 +106,7 @@ const Cart=() =>{
                 </TotalResumen>
                 <hr />
                 <div className='center'>
-                <a href="/"><button className="waves-effect waves-light btn green" onClick={<Link to={"/"}></Link>}>Finalizar Compra</button></a>
+                <button className="waves-effect waves-light btn green" onClick={createOrder}>Finalizar Compra</button>
                 </div>
             </ResumenCarrito>
             }
