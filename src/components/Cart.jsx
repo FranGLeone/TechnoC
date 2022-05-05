@@ -8,15 +8,18 @@ import {Link} from "react-router-dom"
 import FormatNumber from '../util/FormatNumber';
 import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
 import db from "../util/FirebaseConfig";
+import Swal from 'sweetalert2';
 
 const Cart=() =>{
+  
     const context = useContext(CartContext);
     console.log(context.cartList)
     const createOrder = () => {
         const itemsForDB = context.cartList.map(item => ({
           id: item.idItem,
           title: item.nameItem,
-          price: item.costItem
+          price: item.priceItem,
+          qty: item.qtyItem
         }));
     
         context.cartList.forEach(async (item) => {
@@ -27,10 +30,10 @@ const Cart=() =>{
         });
     
         let order = {
-          buyer: {
-            name: "Lila Sciorra",
-            email: "Lilita@gmail.com",
-            phone: "1122334455"
+          comprador: {
+            nombre: "Alex Marin Mendez",
+            email: "profeAlex@react.com",
+            telefono: "1122334455"
           },
           total: context.calcTotal(),
           items: itemsForDB,
@@ -45,9 +48,20 @@ const Cart=() =>{
           await setDoc(newOrderRef, order);
           return newOrderRef;
         }
-      
+        
+        
         createOrderInFirestore()
-          .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+          .then(result => Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Tu orden ha sido creada.',
+                    text: 'Por favor, toma nota del código de reserva: ' + result.id,
+                    showConfirmButton: true,
+
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutRight'
+                    }}
+                  ))
           .catch(err => console.log(err));
       
         context.removeAllItems();
@@ -78,7 +92,20 @@ const Cart=() =>{
                                 ${item.priceItem} c/u. <br />
                                 ${context.totalPerItem(item.idItem)} total
                             </PriceCarrito>
-                            <DeleteForeverSharpIcon cursor="pointer" fontSize='large' onClick={() => context.deleteItem(item.idItem)}/>             
+                            <DeleteForeverSharpIcon cursor="pointer" fontSize='large' onClick={() =>{Swal.fire({
+                                                                                      title: '¿Quitar item de tu carrito?',
+                                                                                      icon: 'question',
+                                                                                      showCancelButton: true,
+                                                                                      confirmButtonColor: '#3085d6',
+                                                                                      cancelButtonColor: '#d33',
+                                                                                      confirmButtonText: 'Quitar',
+                                                                                      cancelButtonText: 'Cancelar',
+                                                                                      hideClass: {
+                                                                                        popup: 'animate__animated animate__fadeOut'
+                                                                                                },
+                                                                              }).then((res)=>{
+                                                                                if (res.isConfirmed){context.deleteItem(item.idItem)}
+                                                                              }) }}/>             
                         </Product>
                         </>
             )}
@@ -106,7 +133,23 @@ const Cart=() =>{
                 </TotalResumen>
                 <hr />
                 <div className='center'>
-                <button className="waves-effect waves-light btn green" onClick={createOrder}>Finalizar Compra</button>
+                <button className="waves-effect waves-light btn green" onClick={()=>{Swal.fire({
+                                                                                      title: '¿Quieres finalizar tu compra?',
+                                                                                      text: "¡Aprovecha los descuentos del mes de mayo!",
+                                                                                      icon: 'warning',
+                                                                                      showCancelButton: true,
+                                                                                      confirmButtonColor: '#3085d6',
+                                                                                      cancelButtonColor: '#d33',
+                                                                                      confirmButtonText: 'Finalizar compra',
+                                                                                      cancelButtonText: 'Seguir comprando',
+                                                                                      showClass: {
+                                                                                        popup: 'animate__animated animate__fadeInLeft'
+                                                                                                },
+                                                                              }).then((res)=>{
+                                                                                if (res.isConfirmed){createOrder()}
+                                                                              })}}>
+                Finalizar Compra
+                </button>
                 </div>
             </ResumenCarrito>
             }

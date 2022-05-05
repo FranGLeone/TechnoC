@@ -5,6 +5,7 @@ import { SearchContainer,Input, Logo } from './styledComponents';
 import SearchIcon from '@mui/icons-material/Search';
 import {Link} from "react-router-dom"
 
+
 const NavBar = () =>{
     return(
       <>

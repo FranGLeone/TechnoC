@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar'
 import Footer from "../components/Footer";
 import Cart from '../components/Cart';
 import CartContextProvider from '../components/CartContext';
-
+import "animate.css";
 
 
 const Home=()=>{
