@@ -1,5 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { CartContext } from './CartContext';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {Link} from "react-router-dom"

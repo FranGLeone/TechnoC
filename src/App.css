@@ -165,6 +165,20 @@
     color: white;
 }
 
+.link3{
+    color: white;
+}
+
+.linkIg{
+    color: rgb(247, 41, 168);
+}
+.linkTw{
+    color: rgb(41, 223, 247);
+}
+.linkFb{
+    color: rgb(1, 69, 255);
+}
+
 .minheight{
     position: relative;
     min-height: 764px;

@@ -43,7 +43,7 @@ const Cart=() =>{
         console.log(order);
         
         const createOrderInFirestore = async () => {
-          // Add a new document with a generated id
+         
           const newOrderRef = doc(collection(db, "orders"));
           await setDoc(newOrderRef, order);
           return newOrderRef;
@@ -55,7 +55,7 @@ const Cart=() =>{
                     position: 'center',
                     icon: 'success',
                     title: 'Tu orden ha sido creada.',
-                    text: 'Por favor, toma nota del código de reserva: ' + result.id,
+                    html: 'Por favor, toma nota del código de reserva: '+'<b>'+ result.id + '</b>',
                     showConfirmButton: true,
 
                     hideClass: {
@@ -76,7 +76,21 @@ const Cart=() =>{
             
             {
                 (context.cartList.length > 0)
-                ? <button className='waves-effect waves-light btn blue' onClick={context.removeAllItems}>VACIAR CARRITO</button>
+                ? <button className='waves-effect waves-light btn blue' onClick={()=>{Swal.fire({
+                                                                                      title: '¿Eliminar todos los items del carrito?',
+                                                                                      icon: 'warning',
+                                                                                      showCancelButton: true,
+                                                                                      confirmButtonColor: '#3085d6',
+                                                                                      cancelButtonColor: '#d33',
+                                                                                      confirmButtonText: 'Aceptar',
+                                                                                      cancelButtonText: 'Cancelar',
+                                                                                      hideClass: {
+                                                                                        popup: 'animate__animated animate__fadeOut'
+                                                                                                },
+                                                                                  }).then((res)=>{
+                                                                                    if (res.isConfirmed){context.removeAllItems()}
+                                                                                })}}> 
+                  VACIAR CARRITO</button>
                 : <Logo>Tu carrito está vacío!</Logo>
             }
             </BtnVaciarCarrito>
@@ -105,7 +119,7 @@ const Cart=() =>{
                                                                                                 },
                                                                               }).then((res)=>{
                                                                                 if (res.isConfirmed){context.deleteItem(item.idItem)}
-                                                                              }) }}/>             
+                                                                            }) }}/>             
                         </Product>
                         </>
             )}
