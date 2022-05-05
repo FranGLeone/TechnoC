@@ -10,20 +10,17 @@ const ItemListContainer =()=>{
   const [items,setItems] = useState([])
   const {idCategory} = useParams() 
 
-  
     useEffect(() => {
       firestoreFetchCategory(idCategory)
           .then(result => setItems(result))
           .catch(err => console.log(err));
   }, [idCategory]);
 
-  
   useEffect(() => {
       return (() => {
           setItems([]);
       })
   }, []);
-
 
   return(
     <Container > 

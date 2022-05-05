@@ -4,7 +4,6 @@ import Swal from 'sweetalert2';
 const ItemCount=({stock= 0, initial=1, onAdd})=>{
 
     const[count, setCount] = useState(0)
-   
 
     useEffect(()=>{
         setCount(initial)
@@ -13,9 +12,7 @@ const ItemCount=({stock= 0, initial=1, onAdd})=>{
     const increment=()=>{
         if(count<stock){
             setCount(count+1)
-        }
-
-    }
+        }    }
 
     const decrement=()=>{
         if(count>initial+1){
@@ -23,7 +20,6 @@ const ItemCount=({stock= 0, initial=1, onAdd})=>{
         }
 
     }
-
     return(
         <>
         <div className="contador">

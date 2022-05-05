@@ -1,6 +1,8 @@
 import styled, {keyframes} from "styled-components"
 import {fadeIn} from "react-animations"
 
+
+//navbar
 const SearchContainer = styled.div`
     background-color: transparent;
     border: none;
@@ -10,7 +12,6 @@ const SearchContainer = styled.div`
     padding: 5px;
     
 `;
-
 const Input = styled.input`
     margin-right: 5px;
     border: none;
@@ -19,21 +20,21 @@ const Input = styled.input`
     color: white
     }
 `;
-
-const Cargando = styled.span`
-animation: 1.5s ${keyframes`${fadeIn}`} infinite
-`
-
 const Logo = styled.span`
 animation: ${keyframes`${fadeIn}`} 4s  1
 `
 
+//itemList e itemDetail
+const Cargando = styled.span`
+animation: 1.5s ${keyframes`${fadeIn}`} infinite
+`
+
+//Item
 const Name = styled.div`
 height: 130px;
 text-align: left;
 font-weight:400;
 `
-
 const Price = styled.div`
     font-weight: 100;
     font-size: 26px;
@@ -41,16 +42,14 @@ const Price = styled.div`
     padding-top: 5px;
 `
 
+//Cart
 const BtnVaciarCarrito = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    height: 230px;
-   
-    
+    height: 230px;   
 `
-
 const Product = styled.div`
     display: flex;
     justify-content:space-between;

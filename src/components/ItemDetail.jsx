@@ -56,13 +56,8 @@ const ItemDetail =({item}) =>{
                     </div>          
                 </Row>
             </Container>
-            :<Cargando className="Cargando">Cargando...</Cargando>
-        
-        
-        }
-
-          
-                  
+            :<Cargando className="Cargando">Cargando...</Cargando>      
+        }                  
         </>
     )
     

@@ -13,7 +13,6 @@ import Swal from 'sweetalert2';
 const Cart=() =>{
   
     const context = useContext(CartContext);
-    console.log(context.cartList)
     const createOrder = () => {
         const itemsForDB = context.cartList.map(item => ({
           id: item.idItem,
@@ -39,8 +38,6 @@ const Cart=() =>{
           items: itemsForDB,
           date: serverTimestamp()
         };
-      
-        console.log(order);
         
         const createOrderInFirestore = async () => {
          
@@ -48,8 +45,7 @@ const Cart=() =>{
           await setDoc(newOrderRef, order);
           return newOrderRef;
         }
-        
-        
+               
         createOrderInFirestore()
           .then(result => Swal.fire({
                     position: 'center',
