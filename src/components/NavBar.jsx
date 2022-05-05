@@ -39,7 +39,7 @@ const NavBar = () =>{
           </NavDropdown>
           <SearchContainer>
                 <Input/>
-                <SearchIcon className="IconoBusq" onClick={()=> alert("Usted quiso buscar algo...pero todavia no esta programado :)")}/>
+                <SearchIcon className="IconoBusq" onClick={()=> alert("Usted quiso buscar algo...pero todavia no esta programado. Disculpe las molestias :)")}/>
             </SearchContainer>
         </Nav>
         <Nav className="mx-4">
