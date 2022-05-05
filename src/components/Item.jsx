@@ -8,9 +8,8 @@ const Item =({id,name,stock,price,thumbnail}) =>{
         <Card className="CardProductos" style={{ width: '18rem' }}>
             <Card.Img className="imgCard" variant="top" src={thumbnail}  />
             <Card.Body>
-                <div><Card.Title><Name>{name}</Name></Card.Title>
-                <hr></hr>
-                </div>
+                <Card.Title><Name>{name}</Name></Card.Title>
+                <hr></hr> 
                 <Card.Title><Price>${price}</Price></Card.Title>
                 <br></br>
                 {
