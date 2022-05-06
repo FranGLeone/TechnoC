@@ -1,11 +1,7 @@
 
 # TechnoCraft
 
-
-
-
-
-
+<img src="TechnoCraftHome.jpg" alt="TechnoCraft Home"/>
 
 
 TechnoCraft es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de componentes de computadora (Hardware). Esta desarrollado con HTML5, CSS3, Javascript y React Js, basado en el framework "React bootstrap"
@@ -19,8 +15,6 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 3) Vista del detalle del producto, que permite saber un poco más de cada producto gracias a la descripción del mismo, y donde se puede elegir la cantidad que queramos llevar de cada producto y agregarlo a nuestro carrito.
 
 4) Vista del carrito, donde se pueden observar los productos elegidos por el cliente, la cantidad por la que optó, el precio individual de cada item y el precio en total. Además, hay un breve resumen de los precios de todos los productos elegidos junto con impuestos y posibles descuentos de temporada. También se puede borrar todo el carrito o borrar uno a uno cada producto no deseado.
-
-
 
 
 ## Construido con 
