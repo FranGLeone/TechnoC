@@ -1,70 +1,30 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TechnoCraft
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+TechnoCraft es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de componentes de computadora (Hardware). Esta desarrollado con HTML5, CSS3, Javascript y React Js, basado en el framework "React bootstrap"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) (Simple page application) y cuenta con las siguientes opciones:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1) Menu de navegación, donde se puede acceder a las distintas categorías de productos, al carrito, y luego a la barra de búsqueda y otras funciones todavia en desarrollo. Esta funcion se logró gracias al uso de React-router-dom.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2) Vista general de la tienda, en la cual se encuentran todos los productos disponibles en la base de datos de la tienda (haya stock o no), y en la cual se muestran los datos mas relevantes, tales como el precio, el nombre, el stock y la imagen de cada producto.
 
-### `npm run eject`
+3) Vista del detalle del producto, que permite saber un poco más de cada producto gracias a la descripción del mismo, y donde se puede elegir la cantidad que queramos llevar de cada producto y agregarlo a nuestro carrito.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4) Vista del carrito, donde se pueden observar los productos elegidos por el cliente, la cantidad por la que optó, el precio individual de cada item y el precio en total. Además, hay un breve resumen de los precios de todos los productos elegidos junto con impuestos y posibles descuentos de temporada. También se puede borrar todo el carrito o borrar uno a uno cada producto no deseado.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Construido con 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Bootstrap] para dar forma al proyecto (https://shields.io/)
+- [React Router Dom] para la navegación del mismo(https://shields.io/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

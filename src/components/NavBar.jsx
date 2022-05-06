@@ -32,7 +32,7 @@ const NavBar = () =>{
             <NavDropdown.Divider />
             <NavDropdown.Item ><Link to="/category/Mother"className="link">Mothers</Link></NavDropdown.Item>
             <NavDropdown.Item> <Link to="/category/Memoria RAM"className="link">Memorias RAM</Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to="/category/Almacenamiento"className="link">Procesadores</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to="/category/Almacenamiento"className="link">Almacenamiento</Link></NavDropdown.Item>
             <NavDropdown.Item> <Link to="/category/Placa de video"className="link">Placas de video</Link></NavDropdown.Item>
             <NavDropdown.Item> <Link to="/category/Procesador"className="link">Procesadores</Link></NavDropdown.Item>
             <NavDropdown.Item> <Link to="/category/Gabinete"className="link">Gabinetes</Link></NavDropdown.Item>
