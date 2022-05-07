@@ -19,11 +19,11 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 
 ## Construido con :gear:
 
-- [React Bootstrap](https://react-bootstrap.github.io//) Para dar forma al sitio.
-- [React Router Dom](https://www.npmjs.com/package/react-router-dom) Para la navegación del sitio.
+- [React Bootstrap](https://react-bootstrap.github.io//) Para dar forma a la página web.
+- [React Router Dom](https://www.npmjs.com/package/react-router-dom) Para la navegación de la página web.
 - [Node Js](https://nodejs.org/es/) Entorno de ejecución para JavaScript.
-- [Material UI icons](https://mui.com/material-ui/material-icons/) Para los íconos del sitio.
-- [Animate Css](https://animate.style/) Para algunas animaciones del sitio (no todas).
+- [Material UI icons](https://mui.com/material-ui/material-icons/) Para los íconos de la página.
+- [Animate Css](https://animate.style/) Para algunas animaciones de la página (no todas).
 - [Sweet alert 2](https://sweetalert2.github.io/) Para las alertas de confirmación.
 
 ## Instalación :abacus:
@@ -37,6 +37,12 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
         
         npm start
                 
+## Licencia :page_with_curl:
 
-        
-    
+Este proyecto es libre de uso para mejorar, clonar, analizar, o lo que parezca mejor hacer con el. Se agradece citar la fuente.
+
+## Demo 
+
+Aquí una pequeña demostración de las funcionalidades que tiene la SPA:
+
+[![Demo Technocraft](https://youtu.be/cevhBrvP4nE)](https://youtu.be/cevhBrvP4nE)
