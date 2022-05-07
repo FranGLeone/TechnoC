@@ -45,4 +45,4 @@ Este proyecto es libre de uso para mejorar, clonar, analizar, o lo que parezca m
 
 Aquí una pequeña demostración de las funcionalidades que tiene la SPA:
 
-[![Demo Technocraft](https://youtu.be/cevhBrvP4nE)](https://youtu.be/cevhBrvP4nE)
+[![Alt text](https://img.youtube.com/vi/cevhBrvP4nE/0.jpg)](https://www.youtube.com/watch?v=cevhBrvP4nE)
