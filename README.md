@@ -26,3 +26,4 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 - [Animate Css](https://animate.style/) Para algunas animaciones del sitio (no todas).
 - [Sweet alert 2](https://sweetalert2.github.io/) Para las alertas de confirmación.
 
+## Instalación :abacus:
