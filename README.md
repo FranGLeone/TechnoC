@@ -41,7 +41,7 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 
 Este proyecto es libre de uso para mejorar, clonar, analizar, o lo que parezca mejor hacer con el. Se agradece citar la fuente.
 
-## Demo 
+## Demo :clapper:
 
 Aquí una pequeña demostración de las funcionalidades que tiene la SPA:
 
