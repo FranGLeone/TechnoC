@@ -17,7 +17,7 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 4) Vista del carrito, donde se pueden observar los productos elegidos por el cliente, la cantidad por la que optó, el precio individual de cada item y el precio en total. Además, hay un breve resumen de los precios de todos los productos elegidos junto con impuestos y posibles descuentos de temporada. También se puede borrar todo el carrito o borrar uno a uno cada producto no deseado.
 
 
-## Construido con 
+## Construido con :gear:
 
 - [React Bootstrap](https://react-bootstrap.github.io//) Para dar forma al sitio.
 - [React Router Dom](https://www.npmjs.com/package/react-router-dom) Para la navegación del sitio.
