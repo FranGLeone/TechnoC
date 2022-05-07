@@ -19,6 +19,10 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 
 ## Construido con 
 
-- [Bootstrap] para dar forma al proyecto (https://shields.io/)
-- [React Router Dom] para la navegación del mismo(https://shields.io/)
+- [React Bootstrap](https://react-bootstrap.github.io//) Para dar forma al sitio.
+- [React Router Dom](https://www.npmjs.com/package/react-router-dom) Para la navegación del sitio.
+- [Node Js](https://nodejs.org/es/) Entorno de ejecución para JavaScript.
+- [Material UI icons](https://mui.com/material-ui/material-icons/) Para los íconos del sitio.
+- [Animate Css](https://animate.style/) Para algunas animaciones del sitio (no todas).
+- [Sweet alert 2](https://sweetalert2.github.io/) Para las alertas de confirmación.
 
