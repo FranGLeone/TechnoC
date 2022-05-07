@@ -30,4 +30,5 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 
 1) Clonar el repositorio
 2) Para instalar todas las dependencias del proyecto, escribir dentro del directorio raiz el siguiente comando
-    npm install
+    
+    "npm install"
