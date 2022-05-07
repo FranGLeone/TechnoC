@@ -4,7 +4,7 @@
 <img src="TechnoCraftHome.jpg" alt="TechnoCraft Home"/>
 
 
-TechnoCraft es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de componentes de computadora (Hardware). Esta desarrollado con HTML5, CSS3, Javascript y React Js, basado en el framework "React bootstrap"
+TechnoCraft es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de componentes de computadora (Hardware). Está desarrollado con HTML5, CSS3, Javascript y React Js, basado en el framework "React bootstrap"
 
 El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) (Simple page application) y cuenta con las siguientes opciones:
 
