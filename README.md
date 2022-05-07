@@ -29,11 +29,11 @@ El proyecto es una [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
 ## Instalación :abacus:
 
 1) Clonar el repositorio
-2) Para instalar todas las dependencias del proyecto, escribir dentro del directorio raiz el siguiente comando
-    
-    "
-    
-    npm install
-    
-    "
+2) Para instalar todas las dependencias del proyecto, escribir dentro del directorio raiz el siguiente comando:
+
+        npm install
+        
+3)Para correr la aplicación, la cual se abrirá en el link [http://localhost:3000](http://localhost:3000), escribir el siguiente comando:
+
+        npm start
     
