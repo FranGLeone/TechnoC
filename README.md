@@ -46,3 +46,7 @@ Este proyecto es libre de uso para mejorar, clonar, analizar, o lo que parezca m
 Aquí una pequeña demostración de las funcionalidades que tiene la SPA:
 
 [![Alt text](https://img.youtube.com/vi/cevhBrvP4nE/0.jpg)](https://www.youtube.com/watch?v=cevhBrvP4nE)
+
+## Autor :black_nib:
+
+Realizado por [Francisco Gonzalez Leone](https://github.com/FranGLeone) :nerd_face:
